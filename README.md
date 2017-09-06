@@ -9,3 +9,5 @@ Install package with power management ex: > power install <packagename> --save
 
 Restore .csproj <dotnet restore>
 Restore power.json <power restore>
+
+Check credential on git system <git config --edit --global>
