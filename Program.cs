@@ -19,6 +19,7 @@ namespace gorillaspace
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .useDi
                 .UseStartup<Startup>()
                 .Build();
     }
