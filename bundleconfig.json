@@ -4,7 +4,8 @@
         "outputFileName": "wwwroot/css/layout.min.css",
         // An array of relative input file paths. Globbing patterns supported
         "inputFiles": [
-            "wwwroot/css/layout.css"
+            "wwwroot/css/layout.css",
+            "wwwroot/lib/font-awesome/css/font-awesome.min.css"
         ]
     },
     {
@@ -14,7 +15,7 @@
         ],
         // Optionally specify minification options
         "minify": {
-            "enabled": false,
+            "enabled": true,
             "renameLocals": true
         },
         // Optionally generate .map file
