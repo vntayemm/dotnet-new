@@ -3,7 +3,7 @@ public class Booking
     // enum kind: [:visit, :reservation]
     public BookingKind Kind { get; set; }
     //   has_secure_token
-    public bool has_secure_token { get; set; }
+    public bool HasSecureToken { get; set; }
     //   belongs_to :user
     public int UserId { get; set; }
     //   belongs_to :listing
