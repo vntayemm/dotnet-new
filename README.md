@@ -10,7 +10,9 @@
 -Restore .csproj <dotnet restore>
 -Restore power.json <power restore>
 
--Check credential on git system <git config --system --unset credential.helper>
+-Check credential on git system 
+    <git config --system --unset credential.helper>
+    <git config --global --unset credential.helper>
 
 
 1. Tech of DI and change Service Conatainer in .net core
