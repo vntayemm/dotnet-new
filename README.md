@@ -21,7 +21,7 @@
 
 2. Choose framework  
     Use .NET Core for your server application when:
-        -cross-platform needs.
+        -cross-platform needs.\
         -Microservices. <http://microservices.io/patterns/microservices.html>
         -Docker containers.
         -High-performance and scalable systems.
