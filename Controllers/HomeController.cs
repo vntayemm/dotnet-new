@@ -10,6 +10,12 @@ namespace gorillaspace.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ToDoItemController _todoController;
+        public HomeController(ToDoItemController todoController)
+        {
+            _todoController = todoController;
+        }
+
         public IActionResult Index()
         {
             return View();
