@@ -21,10 +21,13 @@
 - Restore .csproj <dotnet restore>
 - Restore power.json <power restore>
 - Restore nuget <nuget restore>
+- Deployment step: dotnet <restore, build, test, publish> the app.
 
-- Check credential on git system
+0. Git Check credential on git system
     <git config --system --unset credential.helper>
     <git config --global --unset credential.helper>
+
+
 
 1. Tech of DI and change Service Conatainer in .net core
     - Transient lifetime services are created each time they are requested. This lifetime works best for lightweight, stateless services.+
