@@ -5,23 +5,27 @@
 - Create new project with cmd > <dotnet new projectname>
 - Remove all code didn't concerned in project.
 - Config with <bower init> cmd
-- Get package with power management ex: > <power install -S font-awesome>
-- Get package with .NET CLI <dotnet add package Microsoft.EntityFrameworkCore --version 2.0.0>
+- Get package with power management ex: >
+    <power install -S font-awesome>
+    <power uninstall -S font-awesome>
+- Get package with .NET CLI
+    <dotnet add package Microsoft.EntityFrameworkCore --version 2.0.0>
+    <dotnet add package Microsoft.EntityFrameworkCore --version 2.0.0>
 
 - Restore .csproj <dotnet restore>
 - Restore power.json <power restore>
 - Restore nuget <nuget restore>
 
-- Check credential on git system 
+- Check credential on git system
     <git config --system --unset credential.helper>
     <git config --global --unset credential.helper>
 
 1. Tech of DI and change Service Conatainer in .net core
     - Transient lifetime services are created each time they are requested. This lifetime works best for lightweight, stateless services.+
     - Scoped lifetime services are created once per request.
-    - Singleton lifetime services are created the first time they are requested 
+    - Singleton lifetime services are created the first time they are requested
 
-2. Choose framework  
+2. Choose framework
     Use .NET Core for your server application when:
     - cross-platform needs.
     - Microservices. <http://microservices.io/patterns/microservices.html>
@@ -39,4 +43,3 @@
     - multiple application
     - multiple copies app per multiple machine
     - multiple team
-    

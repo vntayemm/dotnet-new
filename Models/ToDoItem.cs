@@ -1,15 +1,19 @@
-using System.ComponentModel.DataAnnotations;
-
-public class ToDoItem
+namespace gorillaspace.Models
 {
-    [Required]
-    public string ID { get; set; }
+    using System.ComponentModel.DataAnnotations;
+    using gorillaspace.Models;
 
-    [Required]
-    public string Name { get; set; }
+    public class ToDoItem : TenantModel
+    {
+        [Required]
+        public string Id { get; set; }
 
-    [Required]
-    public string Notes { get; set; }
+        [Required]
+        public string Name { get; set; }
 
-    public bool Done { get; set; }
+        [Required]
+        public string Notes { get; set; }
+
+        public bool Done { get; set; }
+    }
 }
