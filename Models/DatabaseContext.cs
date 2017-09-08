@@ -5,16 +5,25 @@ namespace gorillaspace.Models
 
     public class DatabaseContext : DbContext
     {
-        public DbSet<ToDoItem> ToDoItems { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Post> Posts { get; set; }
+
         public int TenantId { get; set; }
+
+        public DatabaseContext(DbContextOptions<DatabaseContext> options) :base(options)
+        { }
+        
+        public DatabaseContext()
+        {}
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Model config
             DatabaseConfiguration.Configure(modelBuilder);
-            DatabaseConfiguration.ToDoItemConfig(modelBuilder, TenantId);
+            DatabaseConfiguration.TenantConfig(modelBuilder, TenantId);
 
             //Install seed first
-            Database.(new DatabaseInitializer());
+            // Database.(new DatabaseInitializer());
         }
     }
 }

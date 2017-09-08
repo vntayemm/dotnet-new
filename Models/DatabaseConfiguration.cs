@@ -11,9 +11,9 @@ namespace gorillaspace.Models
             modelBuilder.RemovePluralizingTableNameConvention();
         }
 
-        public static void ToDoItemConfig(ModelBuilder modelBuilder, int tenantId)
+        public static void TenantConfig(ModelBuilder modelBuilder, int tenantId)
         {
-            modelBuilder.Entity<ToDoItem>()
+            modelBuilder.Entity<Blog>()
                 .HasQueryFilter(p => !p.IsDeleted &&
                     p.TenantId == tenantId);
         }

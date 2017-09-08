@@ -8,9 +8,15 @@
 - Get package with power management ex: >
     <power install -S font-awesome>
     <power uninstall -S font-awesome>
-- Get package with .NET CLI
-    <dotnet add package Microsoft.EntityFrameworkCore --version 2.0.0>
-    <dotnet add package Microsoft.EntityFrameworkCore --version 2.0.0>
+
+- Database package with .NET CLI
+    <dotnet add package Microsoft.EntityFrameworkCore>
+    <dotnet add package Microsoft.EntityFrameworkCore.Design>
+    <dotnet add package Microsoft.EntityFrameworkCore.SqlServer>
+    <dotnet add package Microsoft.EntityFrameworkCore.Tools>
+- Database migration with <https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet>
+    <dotnet ef migrations add(remove) init>
+    <dotnet ef database update>
 
 - Restore .csproj <dotnet restore>
 - Restore power.json <power restore>

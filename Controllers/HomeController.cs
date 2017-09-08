@@ -1,17 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using gorillaspace.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿
 
 namespace gorillaspace.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using gorillaspace.Models;
+    using Microsoft.AspNetCore.Mvc;
     public class HomeController : Controller
     {
         private readonly ToDoItemController _todoController;
-        
+
         public HomeController(ToDoItemController todoController)
         {
             _todoController = todoController;
