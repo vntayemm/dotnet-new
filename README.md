@@ -1,13 +1,13 @@
--Install C# environment for vscode. Install <ms-vscode.csharp> extension in vscode
--Install <dotnet-sdk-2.0.0-win-x64.exe>
+- Install C# environment for vscode. Install <ms-vscode.csharp> extension in vscode
+- Install <dotnet-sdk-2.0.0-win-x64.exe>
 - Install <node.js> framework
-- Install power into global with npm > <npm install -g bower>
+- Install bower into global with npm > <npm install -g bower>
 - Create new project with cmd > <dotnet new projectname>
 - Remove all code didn't concerned in project.
 - Config with <bower init> cmd
-- Get package with power management ex: >
-    <power install -S font-awesome>
-    <power uninstall -S font-awesome>
+- Get package with bower management ex: >
+    <bower install -S font-awesome>
+    <bower uninstall -S font-awesome>
 
 - Database package with .NET CLI
     <dotnet add package Microsoft.EntityFrameworkCore>
@@ -18,16 +18,18 @@
     <dotnet ef migrations add(remove) init>
     <dotnet ef database update>
 
+- Tools:
+    Install <npm i -g maildev@0.14.0> and start <maildev> for test mail in project
+
+
 - Restore .csproj <dotnet restore>
-- Restore power.json <power restore>
+- Restore bower.json <bower restore>
 - Restore nuget <nuget restore>
 - Deployment step: dotnet <restore, build, test, publish> the app.
 
 0. Git Check credential on git system
     <git config --system --unset credential.helper>
     <git config --global --unset credential.helper>
-
-
 
 1. Tech of DI and change Service Conatainer in .net core
     - Transient lifetime services are created each time they are requested. This lifetime works best for lightweight, stateless services.+
